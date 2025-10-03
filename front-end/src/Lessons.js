@@ -42,17 +42,92 @@ const Lessons = [{
     name: "learn-liarsdice",
     title: "Liar's Dice",
     lessons: [{
-        id: 0,
-        title: "1",
-        sections: [{}]
-    }]
+        id: 1,
+        title: "What is Liar’s Dice?",
+        sections: [
+        {
+            title: "Overview",
+            content: `Liar’s Dice is a bluffing dice game where players bid on how many of a certain face value are hidden under cups.`
+        }, {
+            title: "Goal of the Game",
+            content: `Be the last player with dice remaining by outsmarting and bluffing opponents.`
+        }
+        ]
+        }, {
+        id: 2,
+        title: "Game Setup",
+        sections: [{
+            title: "Equipment",
+            content: `Each player has 5 dice and a cup to hide them.`
+        }, {
+            title: "Starting the Game",
+            content: `All players roll their dice in secret.`
+        }
+      ]
+    }, {
+        id: 3,
+        title: "Gameplay Basics",
+        sections: [{
+            title: "Bidding",
+            content: `On a turn, a player bids how many dice of a face value they think exist in total. Example: "Four 3s".`
+        }, {
+            title: "Challenging",
+            content: `The next player may either raise the bid or challenge by saying "liar."`
+        }, {
+            title: "Revealing Dice",
+            content: `If challenged, everyone reveals dice. If the bid is correct, the challenger loses a die. If wrong, the bidder loses one.`
+        }
+      ]
+    }
+    ]
 }, {
     name: "learn-catan",
     title: "Settlers of Catan",
     lessons: [{
-        id: 0,
-        title: "1",
-        sections: [{}]
+      id: 1,
+      title: "What is Settlers of Catan?",
+      sections: [
+        {
+          title: "Overview",
+          content: `Settlers of Catan is a strategy board game where players build settlements, cities, and roads to collect resources and earn victory points. First to 10 points wins.`
+        },
+        {
+          title: "Goal of the Game",
+          content: `The objective is to expand across the island of Catan and strategically trade resources with others.`
+        }
+      ]
+    },
+    {
+      id: 2,
+      title: "Game Setup",
+      sections: [
+        {
+          title: "Board Setup",
+          content: `The board is made of hexagonal tiles representing resources: wood, brick, sheep, wheat, and ore. Each tile is assigned a number token.`
+        },
+        {
+          title: "Starting Settlements",
+          content: `Players place 2 settlements and 2 roads on intersections of tiles. Settlements collect resources when adjacent numbers are rolled.`
+        }
+      ]
+    },
+    {
+      id: 3,
+      title: "Gameplay Basics",
+      sections: [
+        {
+          title: "Resource Collection",
+          content: `At the start of each turn, dice are rolled. All players with settlements on tiles matching that number collect resources.`
+        },
+        {
+          title: "Trading & Building",
+          content: `Players may trade resources with others and use them to build new roads, settlements, or upgrade to cities.`
+        },
+        {
+          title: "The Robber",
+          content: `Rolling a 7 activates the robber. The robber blocks a tile from producing resources until moved.`
+        }
+      ]
     }]
 }
 ];
