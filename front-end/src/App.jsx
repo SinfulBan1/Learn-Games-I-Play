@@ -6,6 +6,8 @@ import Layout from './Layout'
 import Poker from './pages/poker'
 import LiarsDice from './pages/liarsdice'
 import Catan from './pages/catan'
+import SignIn from './pages/signin'
+import LessonPage from './pages/lessonpage'
 
 const routes = [
   {
@@ -25,6 +27,12 @@ const routes = [
       }, {
         path: '/catan',
         element: <Catan />,
+      }, {
+        path: '/signin',
+        element: <SignIn />,
+      }, {
+        path: '/lessons/:game/:lessonId',
+        element: <LessonPage />,
       }
     ]
   },

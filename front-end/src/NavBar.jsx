@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
+import useUser from './useUser';
+import { getAuth, signOut } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 
 export default function NavBar() {
+    const { isLoading, user } = useUser();
+    const navigate = useNavigate();
+
     return (
         <nav className="navbar">
             <div className="navbar-left">
@@ -14,7 +20,21 @@ export default function NavBar() {
                 <Link to="/catan" className="navbar-link">Catan</Link>
             </div>
             <div className="navbar-right">
-                <button className="navbar-signin">Sign In</button>
+                { isLoading ? <li>loading...</li> : (
+                    <>
+                    {user && (
+                        <div style={{marginRight:10}}>
+                            Logged in as {user.email}
+                        </div>
+                    )}
+                    <>
+                        {user
+                            ? <button className="navbar-signin" onClick={() =>signOut(getAuth())}>Sign Out</button>
+                            : <button className="navbar-signin" onClick={() =>navigate('/signin')}>Sign In</button>}
+                    </>
+                    </>
+                )}
+
             </div>
         </nav>
     );

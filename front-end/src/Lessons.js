@@ -42,7 +42,7 @@ const Lessons = [{
     name: "learn-liarsdice",
     title: "Liar's Dice",
     lessons: [{
-        id: 1,
+        id: 0,
         title: "What is Liar’s Dice?",
         sections: [
         {
@@ -54,7 +54,7 @@ const Lessons = [{
         }
         ]
         }, {
-        id: 2,
+        id: 1,
         title: "Game Setup",
         sections: [{
             title: "Equipment",
@@ -65,7 +65,7 @@ const Lessons = [{
         }
       ]
     }, {
-        id: 3,
+        id: 2,
         title: "Gameplay Basics",
         sections: [{
             title: "Bidding",
@@ -84,7 +84,7 @@ const Lessons = [{
     name: "learn-catan",
     title: "Settlers of Catan",
     lessons: [{
-      id: 1,
+      id: 0,
       title: "What is Settlers of Catan?",
       sections: [
         {
@@ -98,7 +98,7 @@ const Lessons = [{
       ]
     },
     {
-      id: 2,
+      id: 1,
       title: "Game Setup",
       sections: [
         {
@@ -112,7 +112,7 @@ const Lessons = [{
       ]
     },
     {
-      id: 3,
+      id: 2,
       title: "Gameplay Basics",
       sections: [
         {
