@@ -13,7 +13,6 @@ const useUser = () => {
 
     return unsubscribe;
   }, []);
-  console.log(user);
   return { isLoading, user };
 }
 
