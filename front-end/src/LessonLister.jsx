@@ -13,11 +13,13 @@ export default function LessonLister({ lessons = [], game }) {
                 <Link key={l.title} to={"/lessons/" + game + "/" + l.id}>
                 <section className="lesson-group">
                     <h2>{l.title}</h2>
+                    <div>
                     <ul>
                         {(l.sections).map(s => (
                             <li key={s.title}>{s.title}</li>
                         ))}
                     </ul>
+                    </div>
                 </section>
                 </Link>
             ))}
